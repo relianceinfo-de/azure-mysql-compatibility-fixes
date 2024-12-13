@@ -36,12 +36,11 @@ To avoid Azure MySQL's hidden column behavior:
 
 - Revise SQL Queries:
 
-i. Define a primary key explicitly in the CREATE TABLE statement.
+- Define a primary key explicitly in the CREATE TABLE statement.
 
-ii. Remove any subsequent ALTER TABLE statements that attempt to add a primary key.
+- Remove any subsequent ALTER TABLE statements that attempt to add a primary key.
 
-- Drop Auto-Generated Columns: 
-If a hidden column (like my_row_id) is already created, drop it before redefining the primary key.
+- Drop Auto-Generated Columns: If a hidden column (like my_row_id) is already created, drop it before redefining the primary key.
 
 2. Fix 2: Remove Deprecated Display Width
 - Revise Integer Data Types:
