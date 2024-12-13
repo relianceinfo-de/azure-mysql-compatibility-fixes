@@ -12,8 +12,10 @@ This documentation provides a comprehensive guide for ensuring compatibility whe
 2. Observed Issues
 - Unexpected Column Addition:
 Azure MySQL automatically introduced a hidden column (my_row_id) as a primary key when the table was created without explicitly defining a primary key.
+
 - Error: Multiple Primary Keys Defined:
 Attempting to alter the table to add a primary key caused a conflict, as the hidden column (my_row_id) was already assigned the primary key role.
+
 - Deprecated Feature Warning:
 Display width for integer types (such as BIGINT(20)) caused warnings in Azure MySQL.
 
